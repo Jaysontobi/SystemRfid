@@ -1,9 +1,9 @@
 import axios from 'axios';
 class BaseService {
   constructor(moduleUrl) {
-    this.URL = "http://localhost:4000" + "/" + moduleUrl;
+    this.URL = "http://165.232.154.233/:5000" + "/" + moduleUrl;
     this.axiosInstance = axios.create({
-      baseURL: "http://localhost:4000" + "/" + moduleUrl
+      baseURL: "http://165.232.154.233/:5000" + "/" + moduleUrl
     })
     
     // this.axiosInstance.interceptors.request.use(function (config) {
